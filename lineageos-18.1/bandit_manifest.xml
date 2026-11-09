@@ -4,13 +4,13 @@
   Put this file in .repo/local_manifests/ of a lineage-18.1 checkout (see README).
 -->
 <manifest>
-  <remote name="giannoccarol" fetch="https://github.com/giannoccarol" />
+  <remote name="lumia-msm8974" fetch="https://github.com/lumia-msm8974" />
   <remote name="muppets" fetch="https://github.com/TheMuppets" />
 
   <!-- Nokia Lumia 1520 -->
-  <project path="device/nokia/bandit" name="android_device_nokia_bandit" remote="giannoccarol" revision="lineage-18.1" />
-  <project path="vendor/nokia/bandit" name="android_vendor_nokia_bandit" remote="giannoccarol" revision="lineage-18.1" />
-  <project path="kernel/nokia/msm8974" name="android_kernel_nokia_msm8974" remote="giannoccarol" revision="lineage-18.1-bandit" />
+  <project path="device/nokia/bandit" name="android_device_nokia_bandit" remote="lumia-msm8974" revision="lineage-18.1" />
+  <project path="vendor/nokia/bandit" name="android_vendor_nokia_bandit" remote="lumia-msm8974" revision="lineage-18.1" />
+  <project path="kernel/nokia/msm8974" name="android_kernel_nokia_msm8974" remote="lumia-msm8974" revision="lineage-18.1-bandit" />
 
   <!-- Temporary base: LineageOS msm8974 common tree and its blobs -->
   <project path="device/oppo/msm8974-common" name="LineageOS/android_device_oppo_msm8974-common" remote="github" revision="lineage-18.1" />
