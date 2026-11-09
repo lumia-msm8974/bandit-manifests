@@ -12,6 +12,9 @@
   <project path="vendor/nokia/bandit" name="android_vendor_nokia_bandit" remote="lumia-msm8974" revision="lineage-18.1" />
   <project path="kernel/nokia/msm8974" name="android_kernel_nokia_msm8974" remote="lumia-msm8974" revision="lineage-18.1-bandit" />
 
+  <!-- Device settings shared by the MSM8974 Lumias -->
+  <project path="packages/apps/LumiaParts" name="android_packages_apps_LumiaParts" remote="lumia-msm8974" revision="lineage-18.1" />
+
   <!-- Temporary base: LineageOS msm8974 common tree and its blobs -->
   <project path="device/oppo/msm8974-common" name="LineageOS/android_device_oppo_msm8974-common" remote="github" revision="lineage-18.1" />
   <project path="device/oppo/common" name="LineageOS/android_device_oppo_common" remote="github" revision="lineage-18.1" />
