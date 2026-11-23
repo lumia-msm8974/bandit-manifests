@@ -19,6 +19,7 @@ source build/envsetup.sh && lunch lineage_bandit-userdebug
 ```
 git clone https://github.com/lumia-msm8974/bandit-manifests
 (cd frameworks/base && git am ../../bandit-manifests/lineageos-18.1/patches/frameworks/base/*.patch)
+(cd packages/apps/Camera2 && git am ../../../bandit-manifests/lineageos-18.1/patches/packages/apps/Camera2/*.patch)
 ```
 
 - `frameworks/base/0001`: SystemUI builds one `ThumbnailData` per task snapshot (recents).
@@ -31,6 +32,8 @@ git clone https://github.com/lumia-msm8974/bandit-manifests
 - `frameworks/base/0004`: SettingsProvider loads a default for the animator duration scale
   (`def_animator_duration_scale`); the msm8974 common tree overlays it, with the window and transition scales, to
   0.5x for new installations.
+- `packages/apps/Camera2/0001`: back camera video mode in the settings, shown only on bandit: Standard, 1080p at
+  60 fps, 4K at 30 fps (centre crop).
 
 Credits: LineageOS (msm8974 common, bacon and kernel trees), TheMuppets
 (vendor blobs). See the device tree README for the full list.
